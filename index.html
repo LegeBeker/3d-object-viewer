@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Object Viewer</title>
+    <style>
+      body {
+        margin: 0;
+        background: rgb(22, 22, 22);
+        background: linear-gradient(
+          180deg,
+          rgba(22, 22, 22, 1) 0%,
+          rgba(30, 19, 44, 1) 50%,
+          rgba(42, 14, 81, 1) 75%,
+          rgba(76, 0, 182, 1) 100%
+        );
+      }
+
+      #loading {
+        width: 20rem;
+        height: 2rem;
+        background: rgb(22, 22, 22);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(149, 149, 149, 1) 100%
+        );
+
+        border-radius: 50px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+
+        -webkit-transition: opacity 0.25s ease-in-out;
+        -moz-transition: opacity 0.25s ease-in-out;
+        -ms-transition: opacity 0.25s ease-in-out;
+        -o-transition: opacity 0.25s ease-in-out;
+        transition: opacity 0.25s ease-in-out;
+      }
+
+      #loadingbar {
+        width: 0rem;
+        height: 1.75rem;
+        background: rgb(22, 22, 22);
+        background: linear-gradient(
+          90deg,
+          rgba(105, 65, 133, 1) 0%,
+          rgba(116, 45, 122, 1) 100%
+        );
+        border-radius: 50px;
+        position: absolute;
+        margin: auto;
+        left: 0.125rem;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+      }
+
+      .loaded {
+        opacity: 0 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="loading">
+      <div id="loadingbar"></div>
+    </div>
+    <script type="module" src="js/loadObject.js"></script>
+  </body>
+</html>
