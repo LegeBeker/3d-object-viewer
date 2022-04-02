@@ -5,7 +5,7 @@ import { OrbitControls } from "./libs/OrbitControls.js";
 import { TWEEN } from './libs/tween.module.min.js'
 
 // 3D model that gets loaded in (glTF or glb)
-var object = '../models/cube.glb';
+var object = './models/cube.glb';
 
 var checkEnd = 0;
 var checkStart = 0;
